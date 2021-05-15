@@ -1,6 +1,58 @@
+@import "reset";
 @import "vars";
 @import "global";
-@import "reset";
 @import "fonts";
-
+.header {
+  padding: 40px 0;
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    margin-right: 180px;
+  }
+  &__icons-link + .header__icons-link {
+    margin-left: 24px;
+  }
+  &__icons-link {
+    position: relative;
+  }
+  &__icons-num {
+    position: absolute;
+    top: -11px;
+    left: 13px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fe3e57;
+    font-size: 12px;
+    @extend %q-m;
+    color: $while;
+    line-height: 20px;
+    padding: 0 7px;
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+    margin-right: 178px;
+  }
+  &__item {
+    margin: 0 15px;
+  }
+  &__link {
+    color: $defoult;
+    padding: 0 5px 5px 5px;
+    transition: all 0.5s;
+    &:hover {
+      color: $red;
+      border-bottom: 1px solid $red;
+    }
+  }
+  &__link--active {
+    color: $red;
+    border-bottom: 1px solid $red;
+    @extend %r-b;
+  }
+}
 @import "media";

@@ -1,0 +1,54 @@
+body {
+  color: $defoult;
+  font-size: 16px;
+  @extend %r-r;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.burger {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  display: none;
+  span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    background-color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.5s ease;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+  &.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  &.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  &.active span {
+    transform: scale(0);
+  }
+}
