@@ -55,4 +55,125 @@
     @extend %r-b;
   }
 }
+.footer {
+  padding: 76px 0 75px;
+  background-color: $bg;
+  &-bottom__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 31px 0 0;
+  }
+  &-bottom__copy {
+    font-size: 12px;
+    color: $gray;
+    @extend %q-m;
+    line-height: 31px;
+  }
+  &-bottom__text {
+    display: inline-block;
+    font-size: 12px;
+    color: $gray;
+    @extend %q-m;
+    line-height: 31px;
+    margin-right: 20px;
+  }
+  &-bottom__payment-icons {
+    margin: 0 12px;
+  }
+}
+.footer-top {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 40px;
+  &__inner {
+    display: flex;
+  }
+  &__descr {
+    width: 236px;
+    margin-right: 76px;
+  }
+  &__address {
+    color: $gray;
+    font-size: 16px;
+    @extend %q-m;
+    line-height: 36px;
+  }
+  &__email,
+  &__email-link,
+  &__phone {
+    color: $gray;
+    font-size: 16px;
+    @extend %q-m;
+    line-height: 36px;
+  }
+  &__phone {
+    display: block;
+    margin-bottom: 5px;
+  }
+  &__social-link {
+    margin-right: 19px;
+    path {
+      color: $gray;
+    }
+    &:hover {
+      path {
+        fill: #fe3e57;
+      }
+    }
+  }
+  &__links,
+  &__account {
+    width: 200px;
+  }
+  &__news {
+    max-width: 470px;
+  }
+  &__address {
+    padding-top: 35px;
+    font-size: 16px;
+  }
+  &__link {
+    font-size: 16px;
+    color: $gray;
+    @extend %q-m;
+    line-height: 36px;
+  }
+  &__text {
+    font-size: 16px;
+    color: $gray;
+    @extend %q-m;
+    line-height: 26px;
+    margin-bottom: 29px;
+  }
+  &__input {
+    width: 320px;
+    height: 51px;
+    border: none;
+    padding: 19px 17px;
+    font-size: 16px;
+    color: $gray;
+    @extend %q-m;
+    line-height: 36px;
+    box-shadow: 0px 7px 20px 0 rgba(192, 192, 192, 0.3);
+    background-color: #fff;
+    &::placeholder {
+      font-size: 16px;
+      color: $gray;
+      @extend %q-m;
+      line-height: 36px;
+    }
+  }
+  &__btn {
+    width: 136px;
+    height: 51px;
+    background-color: $btn;
+    font-size: 16px;
+    @extend %r-r;
+    line-height: 36px;
+    box-shadow: 0px 7px 20px 0 rgba(255, 17, 48, 0.3);
+    margin-left: 10px;
+    color: $white;
+    padding: 0;
+    border: none;
+  }
+}
 @import "media";

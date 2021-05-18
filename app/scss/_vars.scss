@@ -2,22 +2,28 @@ $defoult: #29282d;
 $while: #fff;
 $red: #fe3e57;
 %r-b {
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Roboto-Bold";
   font-weight: 700;
 }
 %r-r {
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Roboto-Regular";
   font-weight: 400;
 }
 %r-m {
-  font-family: "Roboto-Medium", sans-serif;
+  font-family: "Roboto-Medium";
   font-weight: 500;
 }
 %q-r {
-  font-family: "Quicksand-Regular", sans-serif;
+  font-family: "Quicksand-Regular";
   font-weight: 400;
 }
 %q-m {
-  font-family: "Quicksand-Medium", sans-serif;
+  font-family: "Quicksand-Medium";
   font-weight: 500;
 }
+// color
+$bg: #f6f6f6;
+$baltic: #29282d;
+$gray: #8d8d8d;
+$white: #ffffff;
+$btn: #fe3e57;

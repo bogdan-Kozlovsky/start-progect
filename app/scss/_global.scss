@@ -52,3 +52,10 @@ body {
     transform: scale(0);
   }
 }
+.title {
+  font-size: 22px;
+  line-height: 36px;
+  @extend %r-m;
+  color: $baltic;
+  margin-bottom: 20px;
+}
