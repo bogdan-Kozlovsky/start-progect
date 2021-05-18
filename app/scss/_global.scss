@@ -1,7 +1,16 @@
+html,
 body {
-  color: $defoult;
+  height: 100%;
+}
+body {
+  color: $gray;
   font-size: 16px;
   @extend %r-r;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex-grow: 1;
 }
 .container {
   max-width: 1200px;

@@ -2,6 +2,7 @@
 @import "vars";
 @import "global";
 @import "fonts";
+@import "libs";
 .header {
   padding: 40px 0;
   &__inner {
@@ -24,7 +25,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #fe3e57;
+    background-color: $btn;
     font-size: 12px;
     @extend %q-m;
     color: $while;
@@ -53,6 +54,85 @@
     color: $red;
     border-bottom: 1px solid $red;
     @extend %r-b;
+  }
+}
+.top-slider {
+  background-image: url(../images/slider-top__bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__container {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__item {
+    padding-left: 175px;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 58px;
+    @extend %r-b;
+    color: $baltic;
+    line-height: 68px;
+    padding-top: 183px;
+  }
+  &__text {
+    font-size: 16px;
+    @extend %q-m;
+    max-width: 466px;
+    margin: 24px 0 74px;
+  }
+  &__btn {
+    padding: 19px 36px;
+    background-color: $btn;
+    color: $white;
+    font-size: 16px;
+    @extend %r-r;
+    line-height: 26px;
+    letter-spacing: 3.2px;
+  }
+  &__images {
+    padding-left: 91px;
+    padding-top: 64px;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: -66px;
+    position: relative;
+    cursor: pointer;
+    li {
+      margin: 0 15px;
+      padding: 5px;
+      button {
+        font-size: 0;
+        padding: 0;
+        width: 6px;
+        height: 6px;
+        background-color: $gray;
+        border-radius: 50%;
+        border: none;
+      }
+      &.slick-active {
+        button {
+          background-color: $btn;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            border: solid 1px $btn;
+            width: 31px;
+            height: 31px;
+            border-radius: 50%;
+            top: -12px;
+            left: -13px;
+          }
+        }
+      }
+    }
   }
 }
 .footer {
