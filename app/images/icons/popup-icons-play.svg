@@ -1,0 +1,26 @@
+<svg id="play_btn" data-name="play btn" xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fe3e57;
+      }
+
+      .cls-1 {
+        opacity: 0.2;
+      }
+
+      .cls-2 {
+        opacity: 0.6;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_7_copy_2" data-name="Ellipse 7 copy 2" class="cls-1" cx="65" cy="65" r="65"/>
+  <circle id="Ellipse_7_copy" data-name="Ellipse 7 copy" class="cls-2" cx="65" cy="65" r="55"/>
+  <circle class="cls-3" cx="65" cy="65" r="45"/>
+  <path class="cls-4" d="M1673.82,3658.14l-11.83-7.6a2.9,2.9,0,0,0-1.55-.54c-0.89,0-1.43.67-1.43,1.78v16.44c0,1.11.54,1.78,1.43,1.78a3.016,3.016,0,0,0,1.54-.54l11.83-7.6a2.06,2.06,0,0,0,.01-3.72" transform="translate(-1602 -3595)"/>
+</svg>

@@ -62,9 +62,15 @@ body {
   }
 }
 .title {
+  font-size: 48px;
+  line-height: 0.54;
+  @extend %r-b;
+  color: $baltic;
+  text-transform: uppercase;
+}
+.subtitle {
   font-size: 22px;
-  line-height: 36px;
   @extend %r-m;
   color: $baltic;
-  margin-bottom: 20px;
+  line-height: 1.64;
 }

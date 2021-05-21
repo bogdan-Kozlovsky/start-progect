@@ -27,3 +27,10 @@ $baltic: #29282d;
 $gray: #8d8d8d;
 $white: #ffffff;
 $btn: #fe3e57;
+
+@function max($numbers...) {
+  @return m#{a}x(#{numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{numbers});
+}
