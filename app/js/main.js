@@ -1,4 +1,16 @@
 $(function () {
+  $(".filter-price__input").ionRangeSlider({
+    type: "double",
+    prefix: '$',
+    onStart: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+    },
+    onChange: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+    },
+  });
   $('.top-slider__inner').slick({
     dots: true,
     arrows: false,
@@ -9,8 +21,6 @@ $(function () {
     normalFill: "#ccccce",
     ratedFill: "#ffc35b",
   });
-
-
   function getTimeRemaining(endtime) {
     const total = Date.parse(endtime) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
@@ -26,7 +36,6 @@ $(function () {
       seconds
     };
   }
-
   function initializeClock(id, endtime) {
     const clock = document.querySelector('.time__items');
     const daysSpan = clock.querySelector('.time__item-days');
@@ -50,7 +59,8 @@ $(function () {
     updateClock();
     const timeinterval = setInterval(updateClock, 1000);
   }
-
   const deadline = $('.time__items').attr('data-time');
   initializeClock('clockdiv', deadline);
+
+
 });
