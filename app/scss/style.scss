@@ -399,21 +399,25 @@
     text-align: center;
   }
   &__item {
+    width: 370px;
+    position: relative;
+  }
+  &__item--sale::before {
+    content: "SALE";
+    position: absolute;
+    box-shadow: 0px 7px 20px 0 rgba(254, 62, 87, 0.25);
+    background-color: #fe3e57;
+    width: 60px;
+    height: 30px;
+    color: #fff;
+    top: 25px;
+    left: 25px;
+    padding: 6px;
+    z-index: 1;
+  }
+  &__images-box {
     position: relative;
     overflow: hidden;
-    z-index: 1;
-    &--sale::before {
-      content: "SALE";
-      position: absolute;
-      box-shadow: 0px 7px 20px 0 rgba(254, 62, 87, 0.25);
-      background-color: #fe3e57;
-      width: 60px;
-      height: 30px;
-      color: #fff;
-      top: 25px;
-      left: 25px;
-      padding: 6px;
-    }
     &:hover .products__item-navigation {
       transform: translateY(0);
     }
@@ -440,6 +444,7 @@
     align-items: center;
     transform: translateX(500%);
     transition: all 0.5s;
+    z-index: 1;
   }
   &__item-icons {
     path {
@@ -481,6 +486,19 @@
 .stars {
   display: flex;
   margin: 0 auto 12px;
+}
+.products__item {
+  // text-align: center;
+  &.products__item--list {
+    width: 100%;
+    .products__images {
+      width: 200px;
+      height: 250px;
+    }
+    .products__item-icons:nth-child(2) {
+      display: none;
+    }
+  }
 }
 // products
 // time
@@ -1071,4 +1089,153 @@
   }
 }
 // filter
+// shop-content
+.shop-content {
+  width: 100%;
+  margin-left: 30px;
+  &__filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 30px;
+    border: solid 1px #ebebeb;
+  }
+  &__filter-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  &__filter-btn--active {
+    path {
+      fill: $btn;
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .products__item {
+      margin-bottom: 40px;
+    }
+  }
+}
+.jq-selectbox__select {
+  background: transparent;
+  color: #333;
+  text-shadow: none;
+  border: none;
+  box-shadow: none;
+
+  padding: 0px 29px 0 10px;
+}
+.jq-selectbox__trigger-arrow {
+  border: none;
+  background-image: url(../images/icons/shop-select-icons.svg);
+  width: 10px;
+  height: 5px;
+}
+.jq-selectbox__trigger {
+  border: none;
+}
+.jq-selectbox__select-text {
+  font-size: 16px;
+  color: $gray;
+  @extend %q-m;
+}
+// shop-content
+// blog
+.blog {
+  &__title {
+    margin-bottom: 38px;
+    text-align: center;
+  }
+  &__text {
+    max-width: 557px;
+    width: 100%;
+    font-size: 16px;
+    @extend %q-r;
+    color: $gray;
+    text-align: center;
+    margin: 0 auto 56px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 370px;
+    min-height: 478px;
+    box-shadow: 20px 0 60px 0 rgba(202, 202, 202, 0.35);
+    border: solid 1px #ececec;
+  }
+  &__img {
+    width: 366px;
+    height: 288px;
+    object-fit: cover;
+  }
+  &__item-content {
+    padding: 34px 40px 29px 40px;
+  }
+  &__item-descr {
+    display: flex;
+    margin-bottom: 24px;
+  }
+  &__item-admin,
+  &__item-date {
+    font-size: 16px;
+    @extend %q-m;
+    color: $gray;
+    position: relative;
+    padding-left: 30px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__item-admin {
+    margin-right: 28px;
+    &::before {
+      background-image: url(../images/icons/user.svg);
+    }
+  }
+  &__item-date::before {
+    background-image: url(../images/icons/time.svg);
+  }
+  &__item-subtitle {
+    font-size: 22px;
+    @extend %r-r;
+    margin-bottom: 19px;
+    color: $baltic;
+  }
+  &__item-link {
+    display: inline-block;
+    font-size: 16px;
+    @extend %q-m;
+    color: $gray;
+    transition: all 0.4s;
+    position: relative;
+    padding-right: 15px;
+    &:hover {
+      color: $btn;
+      .cls-1 {
+        fill: $btn;
+      }
+    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 10px;
+    //   height: 8px;
+    //   background-image: url(../images/icons/arrow-right.svg);
+    //   right: 0px;
+    //   top: 6px;
+    // }
+  }
+}
+// blog
 @import "media";
