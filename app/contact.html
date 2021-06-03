@@ -10,9 +10,6 @@
 </head>
 
 <body>
-
-
-
   <!-- header -->
   <header class="header">
     <div class="container">
@@ -80,7 +77,7 @@
       <div class="top__container">
         <div class="top__inner">
           <h2 class="top__title">
-            LOG IN
+            CONTACT US
           </h2>
           <ul class="breadcrumb">
             <li class="breadcrumb__item">
@@ -90,7 +87,7 @@
             </li>
             <li class="breadcrumb__item">
               <a class="breadcrumb__link breadcrumb__link--active" href="#">
-                Log in
+                Contact
               </a>
             </li>
           </ul>
@@ -98,40 +95,92 @@
       </div>
     </div>
     <!-- top -->
-    <div class="modal">
+    <!-- map -->
+    <div class="map">
       <div class="container">
-        <div class="modal__inner">
-          <a class="modal__link" href="#">
-            REGISTER
-          </a>
-          <a class="modal__link modal__link--active" href="#">
-            LOGIN
-          </a>
-        </div>
-        <form class="modal__form" action="#">
-          <label class="modal__label">
-            Username or email address
-            <input class="modal__form-input" type="text" required>
-          </label>
-          <label class="modal__label">
-            Password*
-            <input class="modal__form-input" type="password" required>
-          </label>
-          <label class="modal__form-remember">
-            <input type="checkbox">
-            Remember me
-          </label>
-          <button class="modal__form-btn" type="submit">
-            LOG IN
-          </button>
-          <a class="modal__form-link" href="#">
-            Lost your password?
-          </a>
-        </form>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20309.075323923767!2d30.4721233!3d50.4851493!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1622644846361!5m2!1sru!2sua"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
-
-
+    <!-- map -->
+    <!-- contact -->
+    <div class="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__content">
+            <h2 class="contact__title">
+              Feel Free Don’t
+              Hesitate To
+              Contact With Us
+            </h2>
+            <p class="contact__text">
+              Lorem ipsum dolor sit amet, consectetur adingn elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo maecnaacnrao cumsan lacus vel
+              facilisis.
+            </p>
+            <div class="contact__content-inner">
+              <!-- 1 -->
+              <div class="contact__content-item">
+                <div class="contact__content-imgbox">
+                  <img class="contact__content-img" src="images/icons/contact-1.svg" alt="">
+                </div>
+                <div class="contact__content-box">
+                  <a class="contact__content-phone" href="tel+01234567896">
+                    +0-123-456-7896
+                  </a>
+                  <a class="contact__content-phone" href="tel+01234567896">
+                    +0-123-456-7896
+                  </a>
+                </div>
+              </div>
+              <!-- 1 -->
+              <!-- 2 -->
+              <div class="contact__content-item">
+                <div class="contact__content-imgbox">
+                  <img class="contact__content-img" src="images/icons/contact-2.svg" alt="">
+                </div>
+                <div class="contact__content-box">
+                  <p class="contact__content-text">
+                    Ranlon Market 789 Road,
+                  </p>
+                  <p class="contact__content-text">
+                    Market Street, Newyork
+                  </p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <!-- 3 -->
+              <div class="contact__content-item">
+                <div class="contact__content-imgbox">
+                  <img class="contact__content-img" src="images/icons/contact-3.svg" alt="">
+                </div>
+                <div class="contact__content-box">
+                  <a class="contact__content-mail" href="maito:  yourmailaddress@gmail.com">
+                    yourmailaddress@gmail.com
+                  </a>
+                  <a class="contact__content-mail" href="maito:companymail@gmail.com">
+                    companymail@gmail.com
+                  </a>
+                </div>
+              </div>
+              <!-- 3 -->
+            </div>
+          </div>
+          <form class="contact__form" action="#">
+            <h3 class="contact__form-title">
+              Contact Form
+            </h3>
+            <input class="contact__form-input" type="text" placeholder="Your Name" required>
+            <input class="contact__form-input" type="email" placeholder="Your E-mail Address" required>
+            <input class="contact__form-input__subject" type="text" placeholder="Subject">
+            <textarea class="contact__form-textarea" placeholder="Message here"></textarea>
+            <button class="contact__form-btn" type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
   </main>
   <!-- main -->
   <!-- footer -->
